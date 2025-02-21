@@ -1,30 +1,148 @@
+---
+---
+
 <section class="hero min-h-screen flex items-center justify-center relative overflow-hidden">
-  <!-- Fondo con líneas geométricas -->
-  <div class="absolute inset-0 opacity-20">
+  <!-- Fondo con gradiente neón y líneas geométricas -->
+  <div class="absolute inset-0 opacity-15 z-0">
     <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0L1000 1000M1000 0L0 1000" stroke="url(#grad)" stroke-width="1" />
+      <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
       <defs>
         <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.8" />
-          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.8" />
+          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
         </linearGradient>
       </defs>
     </svg>
   </div>
 
+  <!-- Partículas animadas -->
+  <div class="absolute inset-0 z-5 pointer-events-none">
+    <div class="particles">
+      <span class="particle animate-particle-1"></span>
+      <span class="particle animate-particle-2"></span>
+      <span class="particle animate-particle-3"></span>
+      <span class="particle animate-particle-4"></span>
+    </div>
+  </div>
+
   <!-- Contenido -->
   <div class="text-center max-w-4xl px-6 z-10">
-    <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-fade-in-down animate-duration-1000 drop-shadow-neon">
       Automatiza tu éxito con IA
     </h1>
-    <p class="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
+    <p class="text-2xl md:text-3xl mb-10 text-gray-300 leading-relaxed animate-fade-in-up animate-delay-500 animate-duration-1000">
       Tu aliado en automatización y gestión de comunidades online.
     </p>
     <a
       href="/contacto"
-      class="inline-block bg-gradient-to-br from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+      class="inline-block bg-gradient-to-br from-purple-600 to-green-600 hover:from-purple-700 hover:to-green-700 text-white font-semibold py-4 px-10 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:glow-neon animate-pulse-slow"
     >
       Contáctanos
     </a>
   </div>
 </section>
+
+<style>
+  /* Animaciones de entrada */
+  .animate-fade-in-down {
+    animation: fadeInDown 1s ease-out;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-duration-1000 {
+    animation-duration: 1s;
+  }
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Efecto neón para el título */
+  .drop-shadow-neon {
+    filter: drop-shadow(0 0 10px rgba(147, 51, 234, 0.8)) drop-shadow(0 0 20px rgba(16, 185, 129, 0.8));
+  }
+
+  /* Efecto de pulso lento para el botón */
+  .animate-pulse-slow {
+    animation: pulse 3s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  .hover:glow-neon:hover {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.8), 0 0 40px rgba(16, 185, 129, 0.8);
+  }
+
+  /* Partículas animadas */
+  .particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .particle {
+    position: absolute;
+    background: rgba(147, 51, 234, 0.6);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  .animate-particle-1 {
+    top: 20%;
+    left: 15%;
+    animation: particleMove 6s infinite ease-in-out;
+  }
+  .animate-particle-2 {
+    top: 60%;
+    left: 75%;
+    animation: particleMove 5s infinite ease-in-out 1s;
+  }
+  .animate-particle-3 {
+    top: 40%;
+    left: 40%;
+    animation: particleMove 7s infinite ease-in-out 0.5s;
+  }
+  .animate-particle-4 {
+    top: 80%;
+    left: 25%;
+    animation: particleMove 4s infinite ease-in-out 2s;
+  }
+  @keyframes particleMove {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    20% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+</style>
