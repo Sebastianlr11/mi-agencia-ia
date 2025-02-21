@@ -1,18 +1,78 @@
-<section class="about py-16 text-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
-        Sobre Nosotros
-      </h2>
-      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        <div class="w-full md:w-1/3">
-          <img src="/placeholder-ceo.jpg" alt="CEO de la agencia" class="rounded-xl shadow-xl w-full h-auto transform transition-all duration-300 hover:scale-105 hover:shadow-2xl" />
-        </div>
-        <div class="w-full md:w-2/3">
-          <h3 class="text-2xl font-bold text-purple-400 mb-4">Soy [Tu Nombre], CEO</h3>
-          <p class="text-gray-300 leading-relaxed">
-            Como apasionado por la inteligencia artificial y el crecimiento digital, fundé esta agencia para ayudar a empresas a automatizar sus procesos y destacar en redes sociales. Con años de experiencia en IA y community management, mi misión es impulsar tu negocio hacia el éxito con innovación y resultados medibles.
-          </p>
-        </div>
+---
+---
+
+<section class="about py-20 text-white relative overflow-hidden">
+  <!-- Fondo con gradiente neón y líneas geométricas -->
+  <div class="absolute inset-0 opacity-15 z-0">
+    <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container mx-auto px-6 z-10 relative">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
+      Sobre Nosotros
+    </h2>
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/3 animate-fade-in-left">
+        <img
+          src="/placeholder-ceo.jpg"
+          alt="CEO de la agencia"
+          class="rounded-2xl shadow-xl w-full h-auto transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-400/50"
+        />
+      </div>
+      <div class="w-full md:w-2/3 animate-fade-in-right">
+        <h3 class="text-2xl md:text-3xl font-bold text-purple-400 mb-4">Soy [Tu Nombre], CEO</h3>
+        <p class="text-gray-200 leading-relaxed text-lg">
+          Como apasionado por la inteligencia artificial y el crecimiento digital, fundé esta agencia para ayudar a empresas a automatizar sus procesos y destacar en redes sociales. Con años de experiencia en IA y community management, mi misión es impulsar tu negocio hacia el éxito con innovación y resultados medibles.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  /* Animación de pulso lento para el título */
+  .animate-pulse-slow {
+    animation: pulse 4s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+
+  /* Animaciones de entrada */
+  .animate-fade-in-left {
+    animation: fadeInLeft 1s ease-out;
+  }
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease-out;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
