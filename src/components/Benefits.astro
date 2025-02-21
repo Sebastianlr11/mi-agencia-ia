@@ -1,30 +1,104 @@
-<section class="benefits py-16 text-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
-        Beneficios de Trabajar con Nosotros
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <!-- Beneficio 1 -->
-        <div class="card bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-105 transform transition-all duration-300">
-          <h3 class="text-2xl font-bold text-purple-400 mb-4">Ahorro de Tiempo</h3>
-          <p class="text-gray-300">
-            Automatiza procesos repetitivos con IA y enfócate en lo que importa.
-          </p>
-        </div>
-        <!-- Beneficio 2 -->
-        <div class="card bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-105 transform transition-all duration-300">
-          <h3 class="text-2xl font-bold text-green-400 mb-4">Mayor Engagement</h3>
-          <p class="text-gray-300">
-            Incrementa tu presencia en redes con estrategias personalizadas.
-          </p>
-        </div>
-        <!-- Beneficio 3 -->
-        <div class="card bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-105 transform transition-all duration-300">
-          <h3 class="text-2xl font-bold text-blue-400 mb-4">Resultados Medibles</h3>
-          <p class="text-gray-300">
-            Obtén datos claros y objetivos para medir el impacto de nuestros servicios.
-          </p>
-        </div>
+---
+---
+
+<section class="benefits py-20 text-white relative overflow-hidden">
+  <!-- Fondo con gradiente neón y líneas geométricas -->
+  <div class="absolute inset-0 opacity-15 z-0">
+    <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container mx-auto px-6 z-10">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
+      Beneficios de Trabajar con Nosotros
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+      <!-- Beneficio 1 -->
+      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-purple-500/10 shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-left">
+        <h3 class="text-2xl font-bold text-purple-400 mb-4 drop-shadow-neon">Ahorro de Tiempo</h3>
+        <p class="text-gray-200 leading-relaxed text-lg">
+          Automatiza procesos repetitivos con IA y enfócate en lo que importa.
+        </p>
+      </div>
+      <!-- Beneficio 2 -->
+      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-green-500/10 shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-up">
+        <h3 class="text-2xl font-bold text-green-400 mb-4 drop-shadow-neon">Mayor Engagement</h3>
+        <p class="text-gray-200 leading-relaxed text-lg">
+          Incrementa tu presencia en redes con estrategias personalizadas.
+        </p>
+      </div>
+      <!-- Beneficio 3 -->
+      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-blue-500/10 shadow-lg hover:shadow-xl hover:border-blue-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-right">
+        <h3 class="text-2xl font-bold text-blue-400 mb-4 drop-shadow-neon">Resultados Medibles</h3>
+        <p class="text-gray-200 leading-relaxed text-lg">
+          Obtén datos claros y objetivos para medir el impacto de nuestros servicios.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  /* Animación de pulso lento para el título */
+  .animate-pulse-slow {
+    animation: pulse 4s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+
+  /* Animaciones de entrada para las cards */
+  .animate-fade-in-left {
+    animation: fadeInLeft 1s ease-out;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease-out;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Efecto neón para los títulos */
+  .drop-shadow-neon {
+    filter: drop-shadow(0 0 10px rgba(147, 51, 234, 0.8)) drop-shadow(0 0 20px rgba(16, 185, 129, 0.8));
+  }
+</style>
