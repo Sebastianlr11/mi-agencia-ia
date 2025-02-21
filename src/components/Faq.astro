@@ -1,29 +1,90 @@
-<section class="faq py-16 text-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
-        Preguntas Frecuentes
-      </h2>
-      <div class="max-w-3xl mx-auto">
-        <!-- Pregunta 1 -->
-        <div class="collapse collapse-arrow bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl mb-4 hover:shadow-lg transition-shadow duration-300">
-          <input type="checkbox" />
-          <div class="collapse-title text-xl font-semibold text-purple-400">
-            ¿Qué procesos puedo automatizar con IA?
-          </div>
-          <div class="collapse-content text-gray-300">
+---
+---
+
+<section class="faq py-20 text-white relative overflow-hidden">
+  <!-- Fondo con gradiente neón y líneas geométricas -->
+  <div class="absolute inset-0 opacity-15 z-0">
+    <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container mx-auto px-6 z-10 relative">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
+      Preguntas Frecuentes
+    </h2>
+    <div class="max-w-3xl mx-auto space-y-6" id="accordion-flush" data-accordion="collapse">
+      <!-- Pregunta 1 -->
+      <div class="border border-purple-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-300 animate-fade-in-up">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-purple-400 hover:text-purple-300" data-accordion-target="#faq-body-1" aria-expanded="false" aria-controls="faq-body-1">
+            <span>¿Qué procesos puedo automatizar con IA?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-1" class="hidden" aria-labelledby="faq-heading-1">
+          <div class="p-5 text-gray-200 leading-relaxed">
             <p>Puedes automatizar chatbots, flujos de trabajo, análisis de datos y más, ahorrando tiempo y mejorando la eficiencia.</p>
           </div>
         </div>
-        <!-- Pregunta 2 -->
-        <div class="collapse collapse-arrow bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl mb-4 hover:shadow-lg transition-shadow duration-300">
-          <input type="checkbox" />
-          <div class="collapse-title text-xl font-semibold text-green-400">
-            ¿Cómo manejan mis redes sociales?
-          </div>
-          <div class="collapse-content text-gray-300">
+      </div>
+      <!-- Pregunta 2 -->
+      <div class="border border-green-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-300 animate-fade-in-up animate-delay-200">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-green-400 hover:text-green-300" data-accordion-target="#faq-body-2" aria-expanded="false" aria-controls="faq-body-2">
+            <span>¿Cómo manejan mis redes sociales?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-2" class="hidden" aria-labelledby="faq-heading-2">
+          <div class="p-5 text-gray-200 leading-relaxed">
             <p>Gestionamos tus redes con estrategias personalizadas, contenido creativo y monitoreo constante para maximizar tu engagement.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Script de Flowbite -->
+<script src="https://unpkg.com/flowbite@1.8.1/dist/flowbite.min.js"></script>
+
+<style>
+  /* Animación de pulso lento para el título */
+  .animate-pulse-slow {
+    animation: pulse 4s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+
+  /* Animaciones de entrada */
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+</style>
