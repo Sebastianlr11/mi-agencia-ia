@@ -1,0 +1,50 @@
+---
+import NeonBackground from './NeonBackground.astro';
+import Animations from './Animations.astro';
+import NeonEffects from './NeonEffects.astro';
+---
+
+<section class="diferenciadores py-20 text-white relative overflow-hidden" id="differentiators">
+  <NeonBackground />
+  <Animations />
+  <NeonEffects />
+
+  <div class="container mx-auto px-6 z-10 relative">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow drop-shadow-neon">
+      Diferenciadores Clave
+    </h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Diferenciador 1: Tecnología de Punta -->
+      <div class="flex flex-col items-center text-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in-left">
+        <svg class="w-12 h-12 text-purple-400 mb-4 drop-shadow-neon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+          <path d="M12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm0-6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+        </svg>
+        <h3 class="text-xl font-bold text-purple-400 mb-2 drop-shadow-neon">Tecnología de Punta</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Utilizamos IA generativa, análisis predictivo y automatización para optimizar procesos y maximizar resultados en tiempo real.
+        </p>
+      </div>
+      <!-- Diferenciador 2: Asesoría Personalizada -->
+      <div class="flex flex-col items-center text-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in-up animate-delay-200">
+        <svg class="w-12 h-12 text-green-400 mb-4 drop-shadow-neon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-5h2v2h-2zm0-8h2v6h-2z" />
+        </svg>
+        <h3 class="text-xl font-bold text-green-400 mb-2 drop-shadow-neon">Asesoría Personalizada</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Cada cliente recibe un plan estratégico diseñado específicamente para sus necesidades, asegurando soluciones adaptadas y efectivas.
+        </p>
+      </div>
+      <!-- Diferenciador 3: Estrategias Disruptivas -->
+      <div class="flex flex-col items-center text-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in-right animate-delay-400">
+        <svg class="w-12 h-12 text-blue-400 mb-4 drop-shadow-neon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-5h2v2h-2zm0-8h2v6h-2z" />
+        </svg>
+        <h3 class="text-xl font-bold text-blue-400 mb-2 drop-shadow-neon">Estrategias Disruptivas</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Nos enfocamos en ideas innovadoras y tácticas fuera de lo común para destacar tu negocio en un mercado competitivo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
