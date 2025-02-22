@@ -1,59 +1,18 @@
 ---
+import NeonBackground from './NeonBackground.astro';
+import Animations from './Animations.astro';
+import NeonEffects from './NeonEffects.astro';
 ---
 
 <footer class="footer py-12 text-gray-300 relative overflow-hidden">
-  <!-- Fondo con gradiente neón y líneas geométricas -->
-  <div class="absolute inset-0 opacity-15 z-0">
-    <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
-          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
-        </linearGradient>
-      </defs>
-    </svg>
-  </div>
+  <NeonBackground />
+  <Animations />
+  <NeonEffects />
 
   <div class="container mx-auto px-6 text-center z-10 relative">
     <p class="text-lg animate-fade-in-up">
-      © 2025 Quantiq Agency. Todos los derechos reservados.
+      © 2025 <span class="text-purple-400 animate-pulse-slow drop-shadow-neon">Quantiq Agency</span>. Todos los derechos reservados.
     </p>
     
   </div>
 </footer>
-
-<style>
-  /* Animación de pulso lento */
-  .animate-pulse-slow {
-    animation: pulse 4s infinite ease-in-out;
-  }
-  @keyframes pulse {
-    0% { opacity: 0.8; }
-    50% { opacity: 1; }
-    100% { opacity: 0.8; }
-  }
-
-  /* Animaciones de entrada */
-  .animate-fade-in-up {
-    animation: fadeInUp 1s ease-out;
-  }
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-delay-200 {
-    animation-delay: 0.2s;
-  }
-
-  /* Efecto neón para enlaces hover */
-  .hover:glow-neon:hover {
-    text-shadow: 0 0 10px rgba(147, 51, 234, 0.8), 0 0 20px rgba(16, 185, 129, 0.8);
-  }
-</style>
