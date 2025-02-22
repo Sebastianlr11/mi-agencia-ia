@@ -1,109 +1,89 @@
 ---
+import NeonBackground from './NeonBackground.astro';
+import Animations from './Animations.astro';
+import NeonEffects from './NeonEffects.astro';
 ---
 
-<section class="partners py-20 text-white relative overflow-hidden">
-    <!-- Fondo con gradiente neón y líneas geométricas -->
-    <div class="absolute inset-0 opacity-15 z-0">
-      <svg class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0L1200 1200M1200 0L0 1200" stroke="url(#grad)" stroke-width="0.5" />
-        <defs>
-          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
-            <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-  
-    <div class="container mx-auto px-6 z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
-        Nuestros Partners
-      </h2>
-      <div class="carousel-wrapper overflow-hidden max-w-7xl mx-auto">
-        <div class="carousel flex animate-scroll">
-          <!-- Partner 1 -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/google-cloud.png" alt="Google Cloud" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <!-- Partner 2 -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/slack.png" alt="Slack" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <!-- Partner 3 -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/hubspot.png" alt="HubSpot" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <!-- Partner 4 -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/salesforce.png" alt="Salesforce" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <!-- Partner 5 -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/microsoft-azure.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <!-- Duplicamos los elementos para un scroll infinito -->
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/facebook.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/tiktok.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/openai.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/make.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
-          </div>
-          <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
-            <img src="/public/n8n.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+<section class="partners py-20 text-white relative overflow-hidden" id="partners">
+  <NeonBackground />
+  <Animations />
+  <NeonEffects />
+
+  <div class="container mx-auto px-6 z-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
+      Nuestros Partners
+    </h2>
+    <div class="carousel-wrapper overflow-hidden max-w-7xl mx-auto">
+      <div class="carousel flex animate-scroll">
+        <!-- Partner 1 -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/google-cloud.png" alt="Google Cloud" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <!-- Partner 2 -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/slack.png" alt="Slack" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <!-- Partner 3 -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/hubspot.png" alt="HubSpot" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <!-- Partner 4 -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/salesforce.png" alt="Salesforce" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <!-- Partner 5 -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/microsoft-azure.png" alt="Microsoft Azure" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <!-- Duplicamos los elementos para un scroll infinito -->
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/facebook.png" alt="Facebook" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/tiktok.png" alt="TikTok" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/openai.png" alt="OpenAI" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/make.png" alt="Make" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
+        </div>
+        <div class="carousel-item flex-shrink-0 bg-transparent p-6 flex items-center justify-center">
+          <img src="/public/n8n.png" alt="n8n" class="h-16 w-auto opacity-80 hover:opacity-100 transition-all duration-300 hover:glow-neon" />
         </div>
       </div>
     </div>
-  </section>
-  
-  <style>
-    /* Animación de pulso lento para el título */
-    .animate-pulse-slow {
-      animation: pulse 4s infinite ease-in-out;
+  </div>
+</section>
+
+<style>
+  /* Estilo del carrusel */
+  .carousel-wrapper {
+    width: 100%;
+  }
+  .carousel {
+    display: flex;
+    width: max-content; /* Asegura que el contenido no se ajuste al contenedor */
+  }
+  .carousel-item {
+    width: 200px; /* Ajusta este valor según el tamaño deseado de cada item */
+  }
+
+  /* Animación de desplazamiento infinito */
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-    @keyframes pulse {
-      0% { opacity: 0.8; }
-      50% { opacity: 1; }
-      100% { opacity: 0.8; }
+    100% {
+      transform: translateX(-50%); /* Se mueve la mitad porque duplicamos los elementos */
     }
-  
-    /* Estilo del carrusel */
-    .carousel-wrapper {
-      width: 100%;
-    }
-    .carousel {
-      display: flex;
-      width: max-content; /* Asegura que el contenido no se ajuste al contenedor */
-    }
-    .carousel-item {
-      width: 200px; /* Ajusta este valor según el tamaño deseado de cada item */
-    }
-  
-    /* Animación de desplazamiento infinito */
-    .animate-scroll {
-      animation: scroll 20s linear infinite;
-    }
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%); /* Se mueve la mitad porque duplicamos los elementos */
-      }
-    }
-  
-    /* Pausar animación al hacer hover */
-    .carousel:hover .animate-scroll {
-      animation-play-state: paused;
-    }
-  
-    /* Efecto neón para hover en las imágenes */
-    .hover:glow-neon:hover {
-      box-shadow: 0 0 15px rgba(147, 51, 234, 0.7), 0 0 30px rgba(16, 185, 129, 0.7);
-    }
-  </style>
+  }
+
+  /* Pausar animación al hacer hover */
+  .carousel:hover .animate-scroll {
+    animation-play-state: paused;
+  }
+</style>
