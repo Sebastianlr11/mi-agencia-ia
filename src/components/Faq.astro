@@ -8,7 +8,6 @@ import NeonEffects from './NeonEffects.astro';
   <NeonBackground />
   <Animations />
   <NeonEffects />
-
   <div class="container mx-auto px-6 z-10 relative">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
       Preguntas Frecuentes
@@ -26,14 +25,15 @@ import NeonEffects from './NeonEffects.astro';
         </h3>
         <div id="faq-body-1" class="hidden" aria-labelledby="faq-heading-1">
           <div class="p-5 text-gray-200 leading-relaxed">
-            <p>Puedes automatizar chatbots, flujos de trabajo, análisis de datos y más, ahorrando tiempo y mejorando la eficiencia.</p>
+            <p>Desde atención al cliente con chatbots y asistentes de voz hasta la gestión de redes sociales, email marketing y análisis de datos. También realizamos una asesoría personalizada para identificar qué áreas de tu negocio pueden beneficiarse de la automatización, optimizando tiempo y recursos.</p>
           </div>
         </div>
       </div>
+
       <!-- Pregunta 2 -->
-      <div class="border border-green-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-300 animate-fade-in-up animate-delay-200">
+      <div class="border border-purple-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-300 animate-fade-in-up">
         <h3 class="text-xl font-semibold">
-          <button type="button" class="flex items-center justify-between w-full p-5 text-green-400 hover:text-green-300" data-accordion-target="#faq-body-2" aria-expanded="false" aria-controls="faq-body-2">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-purple-400 hover:text-purple-300" data-accordion-target="#faq-body-2" aria-expanded="false" aria-controls="faq-body-2">
             <span>¿Cómo manejan mis redes sociales?</span>
             <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -42,13 +42,80 @@ import NeonEffects from './NeonEffects.astro';
         </h3>
         <div id="faq-body-2" class="hidden" aria-labelledby="faq-heading-2">
           <div class="p-5 text-gray-200 leading-relaxed">
-            <p>Gestionamos tus redes con estrategias personalizadas, contenido creativo y monitoreo constante para maximizar tu engagement.</p>
+            <p>Creamos y programamos contenido optimizado, interactuamos con tu comunidad y analizamos tendencias para mejorar el engagement. Además, utilizamos IA para automatizar respuestas y optimizar estrategias en tiempo real, asegurando un crecimiento constante.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="border border-purple-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-300 animate-fade-in-up">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-purple-400 hover:text-purple-300" data-accordion-target="#faq-body-3" aria-expanded="false" aria-controls="faq-body-3">
+            <span>¿Qué ventajas tiene la publicidad con IA?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-3" class="hidden" aria-labelledby="faq-heading-3">
+          <div class="p-5 text-gray-200 leading-relaxed">
+            <p>Permite una segmentación precisa, optimiza el presupuesto en tiempo real y analiza patrones de comportamiento para mejorar el alcance. Así, logras atraer a clientes potenciales de forma más eficiente y escalable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="border border-purple-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-300 animate-fade-in-up">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-purple-400 hover:text-purple-300" data-accordion-target="#faq-body-4" aria-expanded="false" aria-controls="faq-body-4">
+            <span>¿Cómo garantizan resultados medibles?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-4" class="hidden" aria-labelledby="faq-heading-4">
+          <div class="p-5 text-gray-200 leading-relaxed">
+            <p>Usamos herramientas avanzadas de análisis para monitorear métricas clave como alcance, interacción y retorno de inversión. Ajustamos estrategias continuamente para optimizar los resultados y asegurarnos de que tu negocio crezca de manera efectiva.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="border border-purple-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-purple-400 transition-all duration-300 animate-fade-in-up">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-purple-400 hover:text-purple-300" data-accordion-target="#faq-body-5" aria-expanded="false" aria-controls="faq-body-5">
+            <span>¿La IA reemplaza la creatividad humana?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-5" class="hidden" aria-labelledby="faq-heading-5">
+          <div class="p-5 text-gray-200 leading-relaxed">
+            <p>No, la IA potencia la creatividad al automatizar tareas repetitivas y generar ideas más rápido. Combinamos tecnología con estrategia humana para crear contenido atractivo y alineado con tu marca.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 6 -->
+      <div class="border border-green-500/20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-300 animate-fade-in-up animate-delay-200">
+        <h3 class="text-xl font-semibold">
+          <button type="button" class="flex items-center justify-between w-full p-5 text-green-400 hover:text-green-300" data-accordion-target="#faq-body-6" aria-expanded="false" aria-controls="faq-body-6">
+            <span>¿Cómo empiezo a trabajar con ustedes?</span>
+            <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div id="faq-body-6" class="hidden" aria-labelledby="faq-heading-6">
+          <div class="p-5 text-gray-200 leading-relaxed">
+            <p>Contáctanos para una consulta inicial, donde analizaremos tu negocio y diseñaremos una estrategia personalizada. Te acompañamos en todo el proceso con asesoría y seguimiento para garantizar los mejores resultados.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Script de Flowbite -->
 <script src="https://unpkg.com/flowbite@1.8.1/dist/flowbite.min.js"></script>
