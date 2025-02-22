@@ -66,23 +66,27 @@ import NeonEffects from './NeonEffects.astro';
 </section>
 
 <script>
-  // Función para copiar el correo al portapapeles
-  document.getElementById('copy-email-btn').addEventListener('click', function (e) {
-    e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-
-    // Correo a copiar
-    const email = 'contacto@miagenciaia.com';
-
-    // Copiar el correo al portapapeles
-    navigator.clipboard.writeText(email).then(() => {
-      // Mostrar el mensaje de confirmación
-      const copiedMessage = document.getElementById('copied-message');
-      copiedMessage.classList.remove('hidden');
-
-      // Ocultar el mensaje después de 2 segundos
-      setTimeout(() => {
-        copiedMessage.classList.add('hidden');
-      }, 2000);
-    });
+  // Function para copiar el correo al portapapeles
+  document.getElementById("copy-email-btn").addEventListener("click", function (e) {
+      e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+  
+      // Correo a copiar
+      const email = 'contact@mlagenclaia.com';
+  
+      // Copiar el correo al portapapeles
+      navigator.clipboard.writeText(email).then(() => {
+          // Mostrar el mensaje de confirmación
+          const copiedMessage = document.getElementById("copied-message");
+          if (copiedMessage) {
+              copiedMessage.classList.remove("hidden");
+  
+              // Ocultar el mensaje después de 2 segundos
+              setTimeout(() => {
+                  copiedMessage.classList.add("hidden");
+              }, 2000);
+          }
+      }).catch(err => {
+          console.error('Error al copiar el correo: ', err);
+      });
   });
-</script>
+  </script>
