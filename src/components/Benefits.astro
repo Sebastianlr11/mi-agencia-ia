@@ -1,39 +1,37 @@
 ---
-import NeonBackground from './NeonBackground.astro';
-import Animations from './Animations.astro';
-import NeonEffects from './NeonEffects.astro';
+// No necesitamos importar componentes externos, todo está incluido aquí.
 ---
 
-<section class="benefits py-20 text-white relative overflow-hidden" id="benefits">
-  <NeonBackground />
-  <Animations />
-  <NeonEffects />
+<section class="benefits py-20 text-white relative overflow-hidden bg-transparent" id="benefits">
+  <!-- Fondo elegante (simulado con un gradiente) -->
+  <div class="absolute inset-0 z-0">
+    <div class="bg-gradient-to-br from-gray-900 to-gray-800"></div>
+  </div>
 
+  <!-- Contenido -->
   <div class="container mx-auto px-6 z-10">
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 animate-pulse-slow">
+    <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-12 text-white">
       Beneficios de Trabajar con Nosotros
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-8xl mx-auto">
       <!-- Beneficio 1 -->
-      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-green-500/10 hover:scale-110 shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-left">
-        <h3 class="text-2xl text-center font-bold text-green-300 mb-4 drop-shadow-neon">Ahorro de Tiempo</h3>
-        <p class="text-gray-200 text-center leading-relaxed text-lg">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:scale-105 shadow-lg hover:shadow-xl hover:border-gray-600 transition-all duration-500 rounded-2xl p-8 backdrop-blur-sm">
+        <h3 class="text-2xl text-center font-bold text-blue-400 mb-4">Ahorro de Tiempo</h3>
+        <p class="text-gray-300 text-center leading-relaxed text-lg">
           Automatiza procesos repetitivos con IA y enfócate en lo que importa.
         </p>
       </div>
       <!-- Beneficio 2 -->
-      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-green-500/10 hover:scale-110 shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-up">
-        <h3 class="text-2xl text-center font-bold text-green-300 mb-4 drop-shadow-neon">Mayor Engagement</h3>
-        <p class="text-gray-200 leading-relaxed text-center text-lg">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:scale-105 shadow-lg hover:shadow-xl hover:border-gray-600 transition-all duration-500 rounded-2xl p-8 backdrop-blur-sm">
+        <h3 class="text-2xl text-center font-bold text-green-400 mb-4">Mayor Engagement</h3>
+        <p class="text-gray-300 leading-relaxed text-center text-lg">
           Incrementa tu presencia en redes con estrategias personalizadas.
         </p>
       </div>
-      
-   
       <!-- Beneficio 3 -->
-      <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-green-500/10 hover:scale-110 shadow-lg hover:shadow-xl hover:border-green-400 transition-all duration-500 rounded-3xl p-8 backdrop-blur-sm animate-fade-in-right">
-        <h3 class="text-2xl text-center font-bold text-green-300 mb-4 drop-shadow-neon"> Innovación Continua</h3>
-        <p class="text-gray-200 leading-relaxed text-center text-lg">
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:scale-105 shadow-lg hover:shadow-xl hover:border-gray-600 transition-all duration-500 rounded-2xl p-8 backdrop-blur-sm">
+        <h3 class="text-2xl text-center font-bold text-blue-400 mb-4">Innovación Continua</h3>
+        <p class="text-gray-300 leading-relaxed text-center text-lg">
           Nos mantenemos a la vanguardia con tecnología de última generación para que siempre estés un paso adelante.
         </p>
       </div>

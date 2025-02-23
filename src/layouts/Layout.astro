@@ -18,85 +18,84 @@ import NeonEffects from '../components/NeonEffects.astro';
     <Animations />
     <NeonEffects />
 
-    <!-- Navbar con Flowbite -->
-    <nav class="bg-transparent border-b border-gray-700/30 z-20 relative shadow-lg animate-fade-in-down">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="/" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400 hover:glow-neon transition-all duration-300">
-              Quantiq Agency
-            </a>
-          </div>
-
-          <!-- Menú escritorio -->
-          <div class="hidden md:flex items-center space-x-6">
-            <a href="#services" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-              Servicios
-            </a>
-            <a href="#partners" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-              Partners
-            </a>
-            <a href="#benefits" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-              Beneficios
-            </a>
-            <a href="#faq" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-              FAQ
-            </a>
-            <a href="#about" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-              Sobre Nosotros
-            </a>
-            <a
-              href="#contact"
-              class="btn bg-gradient-to-br from-purple-600 to-green-600 hover:from-purple-700 hover:to-green-700 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg smooth-scroll"
-            >
-              Contáctanos
-            </a>
-          </div>
-
-          <!-- Botón hamburguesa para móvil -->
-          <div class="md:hidden">
-            <button
-              type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-purple-400 transition-all duration-300"
-              data-collapse-toggle="navbar-mobile"
-              aria-controls="navbar-mobile"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Abrir menú principal</span>
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
+   <!-- Navbar con Flowbite -->
+<nav class="bg-transparent border-b border-gray-700/30 z-20 relative shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="text-2xl font-serif font-bold text-white hover:text-blue-400 transition-all duration-300">
+          Quantiq <span class="text-blue-600">Agency</span>
+        </a>
       </div>
 
-      <!-- Menú móvil (desplegable) -->
-      <div class="md:hidden hidden" id="navbar-mobile">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-br from-gray-900 to-gray-800 border-t border-gray-700/30">
-          <a href="#services" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            Servicios
-          </a>
-          <a href="#partners" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            Partners
-          </a>
-          <a href="#benefits" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            Beneficios
-          </a>
-          <a href="#faq" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            FAQ
-          </a>
-          <a href="#about" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            Sobre Nosotros
-          </a>
-          <a href="#contact" class="block text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:glow-neon smooth-scroll">
-            Contacto
-          </a>
-        </div>
+      <!-- Menú escritorio -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#services" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-scroll">
+          Servicios
+        </a>
+        <a href="#partners" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-scroll">
+          Partners
+        </a>
+        <a href="#benefits" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-scroll">
+          Beneficios
+        </a>
+        <a href="#faq" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-scroll">
+          FAQ
+        </a>
+        <a href="#about" class="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-scroll">
+          Sobre Nosotros
+        </a>
+        <a
+          href="#contact"
+          class="inline-block bg-gradient-to-br from-blue-800 to-gray-900 hover:from-blue-900 hover:to-gray-800 text-white font-semibold px-4 py-2 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 smooth-scroll"
+        >
+          Contáctanos
+        </a>
       </div>
-    </nav>
 
+      <!-- Botón hamburguesa para móvil -->
+      <div class="md:hidden">
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-blue-400 hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-400 transition-all duration-300"
+          data-collapse-toggle="navbar-mobile"
+          aria-controls="navbar-mobile"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú móvil (desplegable) -->
+  <div class="md:hidden hidden" id="navbar-mobile">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-br from-gray-900 to-gray-800 border-t border-gray-700/30">
+      <a href="#services" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        Servicios
+      </a>
+      <a href="#partners" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        Partners
+      </a>
+      <a href="#benefits" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        Beneficios
+      </a>
+      <a href="#faq" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        FAQ
+      </a>
+      <a href="#about" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        Sobre Nosotros
+      </a>
+      <a href="#contact" class="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-all duration-300 smooth-scroll">
+        Contacto
+      </a>
+    </div>
+  </div>
+</nav>
     <!-- Contenido dinámico de las páginas -->
     <div class="relative z-10">
       <slot />
